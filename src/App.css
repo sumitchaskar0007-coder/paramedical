@@ -1,0 +1,35 @@
+/* Custom styles are handled by Tailwind CSS */
+/* This file can be removed if not needed */
+/* Gallery hover video effects */
+.hover-card {
+  transition: transform 0.3s ease;
+}
+
+.hover-card:hover .hover-video {
+  display: block !important;
+}
+
+.hover-card:hover .thumbnail-image {
+  display: none !important;
+}
+
+/* Video thumbnail overlay */
+.video-thumbnail-container {
+  position: relative;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.play-overlay:hover {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
