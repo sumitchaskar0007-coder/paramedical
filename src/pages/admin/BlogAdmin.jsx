@@ -4,7 +4,11 @@ import { blogAPI } from '../../api';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
+<<<<<<< HEAD
 const API_URL = 'https://api.jadhavarparamedicalcollege.com';
+=======
+const API_URL = 'http://jadhavarparamedicalcollege.com';
+>>>>>>> 375162ed083e241e7364cbff908bdd9b8b20e692
 
 // Quill toolbar configuration
 const modules = {

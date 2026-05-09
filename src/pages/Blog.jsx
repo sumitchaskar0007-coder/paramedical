@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { blogAPI } from '../api';
 
+<<<<<<< HEAD
 const API_URL = 'https://api.jadhavarparamedicalcollege.com';
+=======
+const API_URL = 'http://jadhavarparamedicalcollege.com';
+>>>>>>> 375162ed083e241e7364cbff908bdd9b8b20e692
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
