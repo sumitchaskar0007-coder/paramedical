@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://utfoundation.edu.in/sitemap.xml
+
