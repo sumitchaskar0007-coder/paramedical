@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 
 const EnquiryModal = ({ isOpen, onClose }) => {
@@ -55,7 +55,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
       } else {
         setSubmitStatus({ type: 'error', message: 'Something went wrong. Please try again.' })
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({ type: 'error', message: 'Network error. Please try again later.' })
     } finally {
       setIsSubmitting(false)

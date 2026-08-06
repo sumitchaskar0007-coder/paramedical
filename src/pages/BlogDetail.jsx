@@ -11,10 +11,11 @@ const BlogDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [readingProgress, setReadingProgress] = useState(0);
-  const [showShare, setShowShare] = useState(false);
 
   useEffect(() => {
     loadBlog();
+    // Reload whenever the route slug changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug]);
 
   useEffect(() => {

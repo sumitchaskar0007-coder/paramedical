@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
 
-import { motion } from 'framer-motion'
 import { FileText, Download, CheckCircle, ChevronDown, ChevronUp, Calendar, DollarSign, FileCheck } from 'lucide-react'
 
 const Admissions = () => {

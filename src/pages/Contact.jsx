@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react'
 
 const Contact = () => {
@@ -39,7 +38,7 @@ const Contact = () => {
       } else {
         setSubmitStatus({ type: 'error', message: 'Something went wrong. Please try again.' })
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({ type: 'error', message: 'Network error. Please try again later.' })
     } finally {
       setIsSubmitting(false)

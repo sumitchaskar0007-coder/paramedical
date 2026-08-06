@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async'
-import { motion } from 'framer-motion'
 import FacultyCard from '../components/FacultyCard'
 import { faculty } from '../data/faculty'
 import { Users } from 'lucide-react'

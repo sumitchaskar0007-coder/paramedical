@@ -32,4 +32,6 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
+// This hook intentionally shares the provider module so consumers use the same context.
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => useContext(AuthContext);

@@ -59,7 +59,7 @@ const AnnouncementAdmin = () => {
         try {
             const response = await announcementAPI.getAllAdmin();
             setAnnouncements(response.data);
-        } catch (err) {
+        } catch {
             setError('Failed to fetch announcements');
         } finally {
             setLoading(false);
@@ -133,7 +133,7 @@ const AnnouncementAdmin = () => {
 
             fetchAnnouncements();
             handleCloseDialog();
-        } catch (err) {
+        } catch {
             setError('Failed to save announcement');
         }
     };
@@ -143,7 +143,7 @@ const AnnouncementAdmin = () => {
             try {
                 await announcementAPI.delete(id);
                 fetchAnnouncements();
-            } catch (err) {
+            } catch {
                 setError('Failed to delete announcement');
             }
         }

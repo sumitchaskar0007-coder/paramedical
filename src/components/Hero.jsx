@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Download, Calendar, ArrowRight } from 'lucide-react'
 

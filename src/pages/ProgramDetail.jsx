@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { programs } from '../data/programs'
 import { Clock, Users, GraduationCap, CheckCircle, Download, ArrowLeft } from 'lucide-react'
 

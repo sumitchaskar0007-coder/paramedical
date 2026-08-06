@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet-async'
+// Framer Motion components use the conventional lowercase namespace in JSX.
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { Briefcase, Building2, TrendingUp, Users, Star, Quote, Hospital, Stethoscope } from 'lucide-react'
-import { testimonials } from '../data/testimonials'
 
 const Placements = () => {
   const hospitalTieUps = [
@@ -17,7 +18,6 @@ const Placements = () => {
     { label: 'Hospital Tie-ups', value: '50+' },
   ]
 
-  const recruiterTestimonials = testimonials.filter(t => t.role.includes('HR') || t.role.includes('Manager') || t.role.includes('Chief'))
 
   return (
     <>

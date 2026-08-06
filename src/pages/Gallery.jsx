@@ -31,6 +31,8 @@ const Gallery = () => {
 
   useEffect(() => {
     fetchGallery();
+    // Fetch once when the gallery mounts.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchGallery = async () => {
@@ -100,7 +102,7 @@ const Gallery = () => {
   // Get Vimeo video ID
   const getVimeoVideoId = (url) => {
     if (!url) return null;
-    const regExp = /vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|video\/|)(\d+)(?:$|\/|\?)/;
+    const regExp = /vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^/]*)\/videos\/|album\/(?:\d+)\/video\/|video\/|)(\d+)(?:$|\/|\?)/;
     const match = url.match(regExp);
     return match ? match[1] : null;
   };

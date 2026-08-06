@@ -40,7 +40,7 @@ const Announcement = () => {
     setError('');
     const response = await announcementAPI.getAll();
     setAnnouncements(response.data); // ✅ backend controlled
-  } catch (err) {
+  } catch {
     setError('Failed to fetch announcements');
   } finally {
     setLoading(false);
