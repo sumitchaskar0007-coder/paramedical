@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import { Download, Calendar, ArrowRight } from 'lucide-react'
 
 const Hero = () => {

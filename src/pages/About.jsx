@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { motion } from 'framer-motion'
 import { Target, Eye, Award, Users, Heart, BookOpen, GraduationCap, Building, Star, Shield, Users as UsersIcon, Globe } from 'lucide-react'
 
 // Import images from assets

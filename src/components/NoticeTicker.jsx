@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { AlertCircle, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 

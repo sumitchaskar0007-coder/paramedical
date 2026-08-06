@@ -1,4 +1,5 @@
 import { Mail, Award, BookOpen } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const FacultyCard = ({ faculty, index }) => {
   return (

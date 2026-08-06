@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import { Clock, Users, GraduationCap, ArrowRight } from 'lucide-react'
 
 const ProgramCard = ({ program, index }) => {

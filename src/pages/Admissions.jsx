@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 
 import { FileText, Download, CheckCircle, ChevronDown, ChevronUp, Calendar, DollarSign, FileCheck } from 'lucide-react'

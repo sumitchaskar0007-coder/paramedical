@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { motion } from 'framer-motion'
 import { Calendar, MapPin, Users, Download } from 'lucide-react'
 
 const Events = () => {
