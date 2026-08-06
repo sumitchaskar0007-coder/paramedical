@@ -10,6 +10,20 @@
   
   body {
     @apply bg-white text-neutral-dark font-body antialiased;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  img, video, iframe {
+    max-width: 100%;
+  }
+
+  button, a, input, select, textarea {
+    -webkit-tap-highlight-color: transparent;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -19,28 +33,45 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary-dark hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    @apply bg-primary text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary-dark hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
   }
   
   .btn-accent {
-    @apply bg-accent text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-accent-dark hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+    @apply bg-accent text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-accent-dark hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
   }
   
   .btn-outline {
-    @apply border-2 border-primary text-primary px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    @apply border-2 border-primary text-primary px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
   }
   
   .card {
-    @apply bg-white rounded-2xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+    @apply bg-white rounded-xl sm:rounded-2xl shadow-md p-4 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
   }
   
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-10 sm:py-12 lg:py-16;
   }
   
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-5 lg:px-6;
   }
+}
+
+::selection {
+  color: white;
+  background: #2563eb;
+}
+
+/* Keep legacy page spacing compact and consistent on small screens. */
+@media (max-width: 767px) {
+  .py-24, .py-20, .py-16 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+  .pt-32, .pt-28, .pt-24 { padding-top: 6rem !important; }
+  .pb-24, .pb-20, .pb-16 { padding-bottom: 2.5rem !important; }
+  .mb-16, .mb-12 { margin-bottom: 2rem !important; }
+  .mt-16, .mt-12 { margin-top: 2rem !important; }
+  .gap-12, .gap-10 { gap: 1.5rem !important; }
+  h1 { line-height: 1.15; }
+  h2, h3 { line-height: 1.25; }
 }
 /* Add these to your global CSS file */
 .line-clamp-2 {

@@ -44,7 +44,7 @@ const Navbar = () => {
   ]
 
   // ✅ FIXED UDAN LINKS (IMPORTANT PART)
-  const udanLinks = Array.from({ length: 8 }, (_, i) => ({
+  const udanLinks = Array.from({ length: 9 }, (_, i) => ({
     path: `/udan/${i + 1}`,   // 👈 MUST BE THIS FORMAT
     label: `Udan ${i + 1}`,
   }))
@@ -58,14 +58,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
               src="/assets/logo/logo1.png"
               alt="College Logo"
-              className="h-12 w-auto object-contain"
+              className="h-10 sm:h-12 w-auto object-contain"
             />
           </Link>
 
@@ -151,7 +151,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden p-2">
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle navigation menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -164,9 +164,9 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t"
+            className="lg:hidden bg-white border-t shadow-xl max-h-[calc(100vh-4rem)] overflow-y-auto"
           >
-            <div className="container-custom py-4 space-y-2">
+            <div className="container-custom py-3 space-y-1">
 
               {[...navLinks, ...campusLinks, ...careerLinks].map(link => (
                 <Link

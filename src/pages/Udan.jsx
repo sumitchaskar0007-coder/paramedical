@@ -50,6 +50,12 @@ const udanBooks = {
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/Udan 8.pdf",
     desc: "Professional ethics, hospital administration, and career readiness."
+  },
+  9: {
+    title: "Udan 9",
+    cover: "/assets/books/udan.png",
+    pdf: "/assets/books/Udan 9.pdf",
+    desc: "The ninth edition in the Udan academic book series for paramedical students."
   }
 };
 
@@ -66,25 +72,25 @@ export default function Udan() {
   }
 
   return (
-    <section className="min-h-screen pt-28 pb-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 grid md:grid-cols-2 gap-8 items-center">
+    <section className="min-h-screen pt-24 sm:pt-28 pb-10 sm:pb-16 px-4 bg-gradient-to-b from-blue-50/60 to-gray-50">
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-5 sm:p-8 grid md:grid-cols-2 gap-6 sm:gap-8 items-center border border-blue-100">
 
         {/* LEFT: COVER */}
         <div className="flex justify-center">
           <img
             src={book.cover}
             alt={book.title}
-            className="w-72 rounded-xl shadow-md"
+            className="w-52 sm:w-64 md:w-72 rounded-xl shadow-md"
           />
         </div>
 
         {/* RIGHT: INFO */}
         <div>
-          <h1 className="text-3xl font-bold text-blue-700 mb-4">
+          <h1 className="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 sm:mb-4">
             {book.title}
           </h1>
 
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6 leading-relaxed">
             {book.desc}
           </p>
 

@@ -131,9 +131,9 @@ const Home = () => {
         <NoticeTicker />
         
         {/* Hero Section with Left Text and Right Background Image */}
-        <section className="relative min-h-[90vh] flex items-center">
+        <section className="relative min-h-[90vh] flex items-center bg-gradient-to-r from-primary to-primary-dark lg:bg-none">
           {/* Background Image */}
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 hidden lg:block">
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ 
