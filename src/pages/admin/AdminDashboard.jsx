@@ -21,6 +21,7 @@ import {
     Lock as LockIcon,
     Article as ArticleIcon  // ✅ NEW ICON FOR BLOG
 } from '@mui/icons-material';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
 const AdminDashboard = () => {
     const navigate = useNavigate();
@@ -38,6 +39,13 @@ const AdminDashboard = () => {
             icon: <ImageIcon fontSize="large" />,
             link: '/admin/gallery',
             color: '#1976d2'
+        },
+        {
+            title: 'Video Management',
+            description: 'Add, edit and remove uploaded or linked videos',
+            icon: <VideoLibraryIcon fontSize="large" />,
+            link: '/admin/videos',
+            color: '#00838f'
         },
         {
             title: 'Announcements',

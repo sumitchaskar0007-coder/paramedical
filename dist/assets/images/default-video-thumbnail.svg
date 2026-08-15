@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title description">
+  <title id="title">Video thumbnail</title>
+  <desc id="description">Default blue video thumbnail with a play icon</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3b67"/><stop offset="1" stop-color="#1976d2"/></linearGradient></defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="640" y="570" fill="#fff" fill-opacity=".8" font-family="Arial, sans-serif" font-size="52" font-weight="700" text-anchor="middle">VIDEO</text>
+</svg>
